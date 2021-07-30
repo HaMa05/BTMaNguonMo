@@ -29,9 +29,9 @@ class User extends Model {
         }
     }
 
-
     public function getUserByUsername($username){
-        $obj_select = $this->connection->prepare("SELECT * FROM users WHERE username = $username");
+        $obj_select = $this->connection
+                ->prepare("SELECT * FROM users WHERE `username` = '$username'");
         $obj_select->execute();
         return $obj_select->fetch(PDO::FETCH_ASSOC);
     }
