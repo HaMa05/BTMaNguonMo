@@ -86,15 +86,15 @@ require_once 'Helpers/Helper.php';
                               </td>
                               <td>
                               <span class="product-price-payment">
-                                 $<?php echo number_format($cart['price'], 0, '.', '.') ?>
+                                 <?php echo number_format($cart['price'], 0, '.', '.') ?> VND
                               </span>
                               </td>
                               <td>
                               <span class="product-price-payment">
-                                  $<?php
+                                  <?php
                                   $price_total = $cart['price'] * $cart['quantity'];
                                   $total += $price_total;
-                                  ?>
+                                  ?> VND
                                 <?php echo number_format($price_total, 0, '.', '.') ?>
                               </span>
                               </td>
@@ -104,7 +104,7 @@ require_once 'Helpers/Helper.php';
                           <td colspan="5" class="product-total">
                               Total:
                               <span class="product-price">
-                                $<?php echo number_format($total, 0, '.', '.') ?>
+                                <?php echo number_format($total, 0, '.', '.') ?> VND
                             </span>
                           </td>
                       </tr>
