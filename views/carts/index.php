@@ -51,16 +51,16 @@ require_once 'Helpers/Helper.php';
                                    value="<?php echo $cart['quantity']; ?>">
                         </td>
                         <td>
-                            $ <?php echo number_format($cart['price']); ?>
+                            <?php echo number_format($cart['price']); ?> VND
                         </td>
                         <td>
-                            $ <?php
+                            <?php
                             $total_item = $cart['quantity'] * $cart['price'];
                             //Cộng tích lũy thành tiền này cho tổng giá trị
                             //đơn hàng
                             $total_cart += $total_item;
                             echo number_format($total_item);
-                            ?>
+                            ?> VND
                         </td>
                         <td>
                             <a class="content-product-a"
@@ -75,10 +75,10 @@ require_once 'Helpers/Helper.php';
 
                 <tr>
                     <td colspan="5" style="text-align: right">
-                        Current total: $
+                        Tổng tiền: 
                         <span class="product-price">
                            <?php echo number_format($total_cart); ?>
-                        </span>
+                        </span> VND
                     </td>
                 </tr>
                 <tr>
