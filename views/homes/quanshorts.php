@@ -3,10 +3,10 @@
 <section class="categories">
     <div class="container-fluid">
         <div class="categories__item categories__large__item set-bg"
-             data-setbg="assets/img/categories/category-1.jpg">
+             data-setbg="assets/img/categories/category-7.jpg">
             <div class="categories__text">
-                <h1>Thời trang nữ</h1>
-            </div>
+                <!-- <h1>Thời trang shorts</h1> -->
+             </div>
         </div>
     </div>
 </section>
@@ -17,7 +17,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4">
-
+                <div class="section-title">
+                    <h4>Sản phẩm mới</h4>
+                </div>
             </div>
             <div class="col-lg-8 col-md-8">
 
@@ -32,20 +34,20 @@
                 ?>
             <div class="col-lg-3 col-md-4 col-sm-6 mix ">
                 <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="../admin/assets/uploads/<?php echo $product['avatar'] ?>">
+                    <div class="product__item__pic set-bg" data-setbg="admin/assets/uploads/<?php echo $product['avatar'] ?>">
 
                         <ul class="product__hover">
-                            <li><a href="../admin/assets/uploads/<?php echo $product['avatar'] ?>" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="admin/assets/uploads/<?php echo $product['avatar'] ?>" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#" data-id="<?php echo $product['id']; ?>"><span class="icon_heart_alt" data-id="<?php echo $product['id']; ?>"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="<?php echo $url_detail ?>"><?php echo $product['title'] ?></a></h6>
-                        <div class="product__price">$ <?php echo number_format($product['price']) ?></div>
+                        <h6><a href="<?php echo $url_detail; ?>"><?php echo $product['title'] ?></a></h6>
+                        <div class="product__price"><?php echo number_format($product['price']) ?> VND</div>
 
                             <span class="add-to-cart"
                                   data-id="<?php echo $product['id']; ?>">
-                                <a href="#" style="color: white">Add to cart</a>
+                                <a href="#" style="color: white">Thêm vào giỏ hàng</a>
                             </span>
 
                     </div>
@@ -58,6 +60,7 @@
     </div>
 </section>
 <!-- Product Section End -->
+
 <!-- Services Section Begin -->
 <section class="services spad">
     <div class="container">

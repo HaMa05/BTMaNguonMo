@@ -75,7 +75,7 @@ require_once 'Helpers/Helper.php';
             </form>
         </div>
         <div class="main-right col-md-9 col-sm-9 col-xs-12">
-            <h2>Products</h2>
+            <h2>Sản phẩm</h2>
           <?php if (!empty($products)): ?>
               <h1 class="post-list-title">
               </h1>
@@ -96,12 +96,12 @@ require_once 'Helpers/Helper.php';
                         </a>
                         <br>
                         <span class="shop-price">
-                           $ <?php echo number_format($product['price']) ?>
+                            <?php echo number_format($product['price']) ?> VND
                 </span>
                         <br>
                         <span data-id="<?php echo $product['id'] ?>" class="add-to-cart">
                         <a href="<?php echo $product_cart_add ?>"
-                        style="color: white">Add to cart</a>
+                        style="color: white">Thêm vào giỏ hàng</a>
                     </span>
                         </div>
                 <?php endforeach; ?>

@@ -14,11 +14,11 @@
                                 </li>
                                 <li>
                                     <h6><i class="fa fa-phone"></i> Phone</h6>
-                                    <p><span>0974469808</span>
+                                    <p><span>0967393125</span>
                                 </li>
                                 <li>
                                     <h6><i class="fa fa-headphones"></i> Support</h6>
-                                    <p>pham2000long@gmail.com</p>
+                                    <p>buivanha@gmail.com</p>
                                 </li>
                             </ul>
                         </div>

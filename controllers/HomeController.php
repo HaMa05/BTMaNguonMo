@@ -16,22 +16,16 @@ class HomeController extends Controller {
     ]);
     require_once 'views/layouts/main.php';
   }
-    public function women() {
+    public function aophong() {
         $product_model = new Product();
-        $products = $product_model->getProductInWomenPage();
+        $products = $product_model->getProductInAoPhongPage();
 
-        $this->content = $this->render('views/homes/women.php', [
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/aophong.php', [
             'products' => $products,
-        ]);
-        require_once 'views/layouts/main.php';
-    }
-
-    public function men() {
-        $product_model = new Product();
-        $products = $product_model->getProductInMenPage();
-
-        $this->content = $this->render('views/homes/men.php', [
-            'products' => $products,
+            'categories' => $categories
         ]);
         require_once 'views/layouts/main.php';
     }
@@ -44,6 +38,123 @@ class HomeController extends Controller {
         $categories = $category_model->getAll();
 
         $this->content = $this->render('views/homes/polo.php', [
+            'products' => $products,
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+    public function hoodie() {
+        $product_model = new Product();
+        $products = $product_model->getProductInhoodiePage();
+
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/hoodie.php', [
+            'products' => $products,
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+    public function aolen() {
+        $product_model = new Product();
+        $products = $product_model->getProductInaolenPage();
+
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/aolen.php', [
+            'products' => $products,
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+    public function somi() {
+        $product_model = new Product();
+        $products = $product_model->getProductInsomiPage();
+
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/somi.php', [
+            'products' => $products,
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+    public function aokhoac() {
+        $product_model = new Product();
+        $products = $product_model->getProductInaokhoacPage();
+
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/aokhoac.php', [
+            'products' => $products,
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+    public function quanjean() {
+        $product_model = new Product();
+        $products = $product_model->getProductInquanjeanPage();
+
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/quanjean.php', [
+            'products' => $products,
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+    public function quankaki() {
+        $product_model = new Product();
+        $products = $product_model->getProductInquankakiPage();
+
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/quankaki.php', [
+            'products' => $products,
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+    public function quanshorts() {
+        $product_model = new Product();
+        $products = $product_model->getProductInquanshortsPage();
+
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/quanshorts.php', [
+            'products' => $products,
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+    public function quanvai() {
+        $product_model = new Product();
+        $products = $product_model->getProductInquanvaiPage();
+
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/quanvai.php', [
+            'products' => $products,
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+    public function quanonha() {
+        $product_model = new Product();
+        $products = $product_model->getProductInquanonhaPage();
+
+        $category_model = new Category();
+        $categories = $category_model->getAll();
+
+        $this->content = $this->render('views/homes/quanonha.php', [
             'products' => $products,
             'categories' => $categories
         ]);

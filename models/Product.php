@@ -28,28 +28,13 @@ class Product extends Model {
     $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
     return $products;
   }
-
-    public function getProductInWomenPage() {
-
-        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
-        $sql_select = "SELECT products.*, categories.name 
-          AS category_name FROM products
-          INNER JOIN categories ON products.category_id = categories.id
-          WHERE products.status = 1 AND categories.id = 10";
-
-        $obj_select = $this->connection->prepare($sql_select);
-        $obj_select->execute();
-
-        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
-        return $products;
-    }
-    public function getProductInMenPage() {
+    public function getProductInAoPhongPage() {
 
         //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
         $sql_select = "SELECT products.*, categories.name 
           AS category_name FROM products
           INNER JOIN categories ON products.category_id = categories.id
-          WHERE products.status = 1 AND categories.id = 9";
+          WHERE products.status = 1 AND categories.id = 6";
 
         $obj_select = $this->connection->prepare($sql_select);
         $obj_select->execute();
@@ -65,6 +50,132 @@ class Product extends Model {
           AS category_name FROM products
           INNER JOIN categories ON products.category_id = categories.id
           WHERE products.status = 1 AND categories.id = 7";
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
+    public function getProductInhoodiePage() {
+
+        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
+        $sql_select = "SELECT products.*, categories.name 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = categories.id
+          WHERE products.status = 1 AND categories.id = 8";
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
+    public function getProductInaolenPage() {
+
+        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
+        $sql_select = "SELECT products.*, categories.name 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = categories.id
+          WHERE products.status = 1 AND categories.id = 9";
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
+    public function getProductInsomiPage() {
+
+        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
+        $sql_select = "SELECT products.*, categories.name 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = categories.id
+          WHERE products.status = 1 AND categories.id = 10";
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
+    public function getProductInaokhoacPage() {
+
+        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
+        $sql_select = "SELECT products.*, categories.name 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = categories.id
+          WHERE products.status = 1 AND categories.id = 11";
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
+    public function getProductInquanjeanPage() {
+
+        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
+        $sql_select = "SELECT products.*, categories.name 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = categories.id
+          WHERE products.status = 1 AND categories.id = 12";
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
+    public function getProductInquankakiPage() {
+
+        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
+        $sql_select = "SELECT products.*, categories.name 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = categories.id
+          WHERE products.status = 1 AND categories.id = 13";
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
+    public function getProductInquanshortsPage() {
+
+        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
+        $sql_select = "SELECT products.*, categories.name 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = categories.id
+          WHERE products.status = 1 AND categories.id = 14";
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
+    public function getProductInquanvaiPage() {
+
+        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
+        $sql_select = "SELECT products.*, categories.name 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = categories.id
+          WHERE products.status = 1 AND categories.id = 15";
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
+    public function getProductInquanonhaPage() {
+
+        //do cả 2 bảng products và categories đều có trường name, nên cần phải thay đổi lại tên cột cho 1 trong 2 bảng
+        $sql_select = "SELECT products.*, categories.name 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = categories.id
+          WHERE products.status = 1 AND categories.id = 16";
 
         $obj_select = $this->connection->prepare($sql_select);
         $obj_select->execute();

@@ -99,7 +99,7 @@ require_once 'Helpers/Helper.php';
 
                             <span class="add-to-cart"
                                   data-id="<?php echo $product['id']; ?>">
-                        <a href="#" style="color: inherit">Add to cart</a>
+                        <a href="#" style="color: inherit">Thêm vào giỏ hàng</a>
                     </span>
                         </div>
                     <?php endforeach; ?>

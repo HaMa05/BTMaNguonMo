@@ -3,9 +3,9 @@
 <section class="categories">
     <div class="container-fluid">
         <div class="categories__item categories__large__item set-bg"
-             data-setbg="assets/img/categories/category-2.jpg">
+             data-setbg="assets/img/categories/category-7.jpg">
             <div class="categories__text">
-                <h1>Thời trang nam</h1>
+                <!-- <h1>Thời trang polo</h1> -->
              </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-4">
                 <div class="section-title">
-                    <h4>New product</h4>
+                    <h4>Sản phẩm mới</h4>
                 </div>
             </div>
             <div class="col-lg-8 col-md-8">
@@ -43,11 +43,11 @@
                     </div>
                     <div class="product__item__text">
                         <h6><a href="<?php echo $url_detail; ?>"><?php echo $product['title'] ?></a></h6>
-                        <div class="product__price">$ <?php echo number_format($product['price']) ?></div>
+                        <div class="product__price"><?php echo number_format($product['price']) ?> VND</div>
 
                             <span class="add-to-cart"
                                   data-id="<?php echo $product['id']; ?>">
-                                <a href="#" style="color: white">Add to cart</a>
+                                <a href="#" style="color: white">Thêm vào giỏ hàng</a>
                             </span>
 
                     </div>

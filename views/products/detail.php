@@ -14,11 +14,11 @@
                       <?php echo $product['title']; ?>
                     </h3>
                     <div class="product-price">
-                      $<?php echo number_format($product['price'], 0, '.', ','); ?>
+                      <?php echo number_format($product['price'], 0, '.', ','); ?> VND
                     </div>
                     <div class="product-cart">
                         <span data-id="<?php echo $product['id']; ?>" class="add-to-cart">
-                            <i class="fa fa-cart-plus"></i> Add to cart
+                            <i class="fa fa-cart-plus"></i> Thêm vào giở hàng
                         </span>
                     </div>
                 </div>

@@ -16,10 +16,25 @@
                             // echo "<pre>";
                             // print_r($categories[0]);
                             // echo "</pre>";
+                            $cate = array(
+                                'aophong',
+                                'polo',
+                                'hoodie',
+                                'aolen',
+                                'somi',
+                                'aokhoac',
+                                'quanjean',
+                                'quankaki',
+                                'quanshorts',
+                                'quanvai',
+                                'quanonha'
+                            );
+
                             for($i = 0; $i < count($categories); $i++) {
                                 $name = $categories[$i]["name"];
-                            
-                                echo '<li><a href="index.php?controller=home&action=polo">'.$name.'</a></li>';
+                                $endPoint = $cate[$i];
+                               
+                                echo '<li><a href="index.php?controller=home&action='.$endPoint.'">'.$name.'</a></li>';
                             }
                         
                         ?>
