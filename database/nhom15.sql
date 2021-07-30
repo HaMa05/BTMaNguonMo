@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.9.5
--- https://www.phpmyadmin.net/
---
--- Máy chủ: localhost:3306
--- Thời gian đã tạo: Th10 17, 2020 lúc 11:02 AM
--- Phiên bản máy phục vụ: 5.7.24
--- Phiên bản PHP: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +11,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `lp_shop`
+-- Cơ sở dữ liệu: `nhom15`
 --
 
 -- --------------------------------------------------------
